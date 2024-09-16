@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, D:/Code/CircuitDesign/lab2/Task/TaskVar12.bdf
+source_file = 1, D:/Code/CircuitDesign/lab2/Task/db/TaskVar12.cbx.xml
+design_name = TaskVar12
+instance = comp, \output_F~output\, output_F~output, TaskVar12, 1
+instance = comp, \input_C~input\, input_C~input, TaskVar12, 1
+instance = comp, \input_A~input\, input_A~input, TaskVar12, 1
+instance = comp, \input_B~input\, input_B~input, TaskVar12, 1

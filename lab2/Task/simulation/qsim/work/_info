@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Code\CircuitDesign\lab2\Task\simulation\qsim
+vTaskVar12
+Z1 IH79BiPZ3[ilcTg]nEf9P71
+Z2 Vh8bH=;zV[Mf]EMLdlXZRV1
+Z3 dD:\Code\CircuitDesign\lab2\Task\simulation\qsim
+Z4 w1726484663
+Z5 8TaskVar12.vo
+Z6 FTaskVar12.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|TaskVar12.vo|
+Z9 o-work work -O0
+Z10 n@task@var12
+!i10b 1
+Z11 !s100 ZVaHIH[M8cB_TVO^QhUMk0
+!s85 0
+Z12 !s108 1726484664.392000
+Z13 !s107 TaskVar12.vo|
+!s101 -O0
+vTaskVar12_vlg_check_tst
+!i10b 1
+Z14 !s100 34LWdaJ96SS9IheGg1eOW2
+Z15 IF`z2^Zm9mTUP:UROZC5_d1
+Z16 VDn_CVUafEzAjeMHe2K2dP1
+R3
+Z17 w1726484662
+Z18 8TaskVar12.vwf.vt
+Z19 FTaskVar12.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z20 !s108 1726484664.573000
+Z21 !s107 TaskVar12.vwf.vt|
+Z22 !s90 -work|work|TaskVar12.vwf.vt|
+!s101 -O0
+R9
+Z23 n@task@var12_vlg_check_tst
+vTaskVar12_vlg_sample_tst
+!i10b 1
+Z24 !s100 j8k<]3eZ_=B^KVS0@1EcN1
+Z25 IKCI;njMQle16EOnjTa_8B3
+Z26 V4V^EjBRSW5;RkcHA_`]^l0
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@task@var12_vlg_sample_tst
+vTaskVar12_vlg_vec_tst
+!i10b 1
+Z28 !s100 <NP2lRO4>Oj1<R5E;5jEM1
+Z29 IhmfSke3WJJGmWRBnng[OL0
+Z30 VHTTSf@;UMVVC0KkD0eC083
+R3
+R17
+R18
+R19
+Z31 L0 156
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z32 n@task@var12_vlg_vec_tst

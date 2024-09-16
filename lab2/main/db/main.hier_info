@@ -1,0 +1,10 @@
+|main
+output_F <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input_X1 => inst4.IN0
+input_X1 => inst.IN0
+input_X3 => inst4.IN1
+input_X3 => inst1.IN1
+input_X2 => inst1.IN0
+input_X2 => inst.IN1
+
+
