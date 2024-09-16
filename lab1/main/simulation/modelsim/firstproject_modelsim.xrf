@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, D:/Code/CircuitDesign/lab1/main/firstproject.bdf
+source_file = 1, D:/Code/CircuitDesign/lab1/main/db/firstproject.cbx.xml
+design_name = firstproject
+instance = comp, \and_output~output\, and_output~output, firstproject, 1
+instance = comp, \or_output~output\, or_output~output, firstproject, 1
+instance = comp, \not_output~output\, not_output~output, firstproject, 1
+instance = comp, \and_input_2~input\, and_input_2~input, firstproject, 1
+instance = comp, \and_input_1~input\, and_input_1~input, firstproject, 1
+instance = comp, \or_input_2~input\, or_input_2~input, firstproject, 1
+instance = comp, \or_input_1~input\, or_input_1~input, firstproject, 1
+instance = comp, \not_input~input\, not_input~input, firstproject, 1

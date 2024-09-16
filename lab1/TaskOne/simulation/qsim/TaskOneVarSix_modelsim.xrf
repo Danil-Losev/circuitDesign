@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, D:/Code/CircuitDesign/lab1/TaskOne/TaskOneVarSix.bdf
+source_file = 1, D:/Code/CircuitDesign/lab1/TaskOne/TaskOneVarSix.vwf
+source_file = 1, D:/Code/CircuitDesign/lab1/TaskOne/db/TaskOneVarSix.cbx.xml
+design_name = TaskOneVarSix
+instance = comp, \output_Y~output , output_Y~output, TaskOneVarSix, 1
+instance = comp, \input_C~input , input_C~input, TaskOneVarSix, 1
+instance = comp, \input_A~input , input_A~input, TaskOneVarSix, 1
+instance = comp, \input_D~input , input_D~input, TaskOneVarSix, 1
+instance = comp, \input_B~input , input_B~input, TaskOneVarSix, 1
+instance = comp, \inst6~0 , inst6~0, TaskOneVarSix, 1

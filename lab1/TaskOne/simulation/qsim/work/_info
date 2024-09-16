@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Code\CircuitDesign\lab1\TaskOne\simulation\qsim
+vTaskOneVarSix
+Z1 IM6VmXO3EBl5V>enbj4CoS0
+Z2 VBefljYT01OkZ>]^Xk`4A20
+Z3 dD:\Code\CircuitDesign\lab1\TaskOne\simulation\qsim
+Z4 w1726219505
+Z5 8TaskOneVarSix.vo
+Z6 FTaskOneVarSix.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@task@one@var@six
+!i10b 1
+Z10 !s100 1LXfEZ6c5:gzm5T99KjVY0
+!s85 0
+Z11 !s108 1726219512.341000
+Z12 !s107 TaskOneVarSix.vo|
+Z13 !s90 -work|work|TaskOneVarSix.vo|
+!s101 -O0
+vTaskOneVarSix_vlg_check_tst
+!i10b 1
+!s100 9ddoRC;eAVM2l1]bHc84h3
+I4C9K81QTldIiC39FccL[E0
+VVaD;bm:o`1kE45BC2nY]12
+R3
+Z14 w1726219504
+Z15 8TaskOneVarSix.vwf.vt
+Z16 FTaskOneVarSix.vwf.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z17 !s108 1726219513.169000
+Z18 !s107 TaskOneVarSix.vwf.vt|
+Z19 !s90 -work|work|TaskOneVarSix.vwf.vt|
+!s101 -O0
+R8
+n@task@one@var@six_vlg_check_tst
+vTaskOneVarSix_vlg_sample_tst
+!i10b 1
+!s100 3MB4@[g;^Dd_MJ>PeE^fA0
+IAmd<KeL2b?1E_RU`HKZm:2
+VV<M]9Xc6@M@?1]2@APMYH2
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@task@one@var@six_vlg_sample_tst
+vTaskOneVarSix_vlg_vec_tst
+!i10b 1
+!s100 1[L5:<m:fAV2b6ci<`LE93
+ILA5IPm4KGo51H?`fa^`f72
+VXjcioOTXI0goz;VZ=32LU3
+R3
+R14
+R15
+R16
+L0 158
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@task@one@var@six_vlg_vec_tst

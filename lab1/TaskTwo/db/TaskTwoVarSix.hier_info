@@ -1,0 +1,10 @@
+|TaskTwoVarSix
+output_F <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+input_X => inst3.IN0
+input_X => inst2.IN0
+input_Z => inst1.IN0
+input_Z => inst4.IN1
+input_Y => inst4.IN0
+input_Y => inst.IN0
+
+

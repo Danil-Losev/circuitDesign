@@ -1,0 +1,11 @@
+|firstproject
+and_output <= inst.DB_MAX_OUTPUT_PORT_TYPE
+and_input_1 => inst.IN0
+and_input_2 => inst.IN1
+or_output <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+or_input_2 => inst2.IN0
+or_input_1 => inst2.IN1
+not_output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+not_input => inst3.IN0
+
+
