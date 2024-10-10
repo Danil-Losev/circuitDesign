@@ -1,0 +1,7 @@
+module main (A, F, C, G, W);
+	input F, C, G, W;
+	output A;
+	
+	assign A = ~F&G&((~C&W)|(C&~W)|(C&W));
+
+endmodule

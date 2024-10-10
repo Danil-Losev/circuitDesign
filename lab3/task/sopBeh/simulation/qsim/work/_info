@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Code\CircuitDesign\lab3\task\sopBeh\simulation\qsim
+vmain
+Z1 IO5z_Q`Id66Pnmn6kC58FQ1
+Z2 V];?aTg16UoKHEC==ki_481
+Z3 dD:\Code\CircuitDesign\lab3\task\sopBeh\simulation\qsim
+Z4 w1728579330
+Z5 8main.vo
+Z6 Fmain.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 lI176XP=BkWD<Nh=hfX[V1
+!s85 0
+Z10 !s108 1728579331.904000
+Z11 !s107 main.vo|
+Z12 !s90 -work|work|main.vo|
+!s101 -O0
+vmain_vlg_check_tst
+!i10b 1
+!s100 H^;Vjh6L[NiIT5cEgSLCH2
+IdlNRMddJnBoBoFFfgN]_00
+VF3LPN<IZknTP8n4UDF[Bm3
+R3
+Z13 w1728579329
+Z14 8Waveform.vwf.vt
+Z15 FWaveform.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z16 !s108 1728579332.086000
+Z17 !s107 Waveform.vwf.vt|
+Z18 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R8
+vmain_vlg_sample_tst
+!i10b 1
+!s100 ?S?@KaRS3SA3mSFnB]K@z0
+IKRldEoV:6C7?8C4<gCBnE2
+VnOP<X_2PK9aBZ@NBbz=Ba0
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vmain_vlg_vec_tst
+!i10b 1
+!s100 O[LG[eePSU1e@W3:X:9Ea3
+IRE3bg@W>JKMB3oeH[mlKo0
+VHZma`Q?n[z_A]1=F?<UDB3
+R3
+R13
+R14
+R15
+L0 156
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

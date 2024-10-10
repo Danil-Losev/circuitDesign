@@ -1,0 +1,12 @@
+|main
+A <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+F => WideAnd0.IN1
+C => and2.IN0
+C => and3.IN0
+C => and1.IN0
+G => WideAnd0.IN2
+W => and1.IN1
+W => and3.IN1
+W => and2.IN1
+
+

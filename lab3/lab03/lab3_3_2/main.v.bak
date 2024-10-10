@@ -1,0 +1,15 @@
+module main (A, F, C, G, W);
+	input F, C, G, W;
+	output A;
+	
+	not(notF, F);
+	not(notC, C);
+	not(notW, W);
+	
+	and(and1, notC, W);
+	and(and2, C, notW);
+	and(and3, C, W);
+	or(or1, and1, and2, and3);
+	and(A, G, notF, or1);
+
+endmodule

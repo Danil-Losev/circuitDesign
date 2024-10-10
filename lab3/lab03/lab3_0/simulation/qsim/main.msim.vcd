@@ -1,0 +1,99 @@
+$comment
+	File created using the following command:
+		vcd file main.msim.vcd -direction
+$end
+$date
+	Thu Oct 10 18:10:06 2024
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module main_vlg_vec_tst $end
+$var reg 1 ! Cabbage $end
+$var reg 1 " Goat $end
+$var reg 1 # Wolf $end
+$var wire 1 $ Alarm $end
+$var wire 1 % sampler $end
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , Alarm~output_o $end
+$var wire 1 - Goat~input_o $end
+$var wire 1 . Cabbage~input_o $end
+$var wire 1 / Wolf~input_o $end
+$var wire 1 0 inst5~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+x%
+0&
+1'
+x(
+1)
+1*
+1+
+0,
+0-
+0.
+0/
+00
+$end
+#100000
+1#
+1/
+0%
+#200000
+1"
+0#
+1-
+0/
+1%
+#300000
+1#
+1/
+0%
+10
+1,
+1$
+#400000
+1!
+0"
+0#
+1.
+0-
+0/
+1%
+00
+0,
+0$
+#500000
+1#
+1/
+0%
+#600000
+1"
+0#
+1-
+0/
+1%
+10
+1,
+1$
+#700000
+1#
+1/
+0%
+#800000

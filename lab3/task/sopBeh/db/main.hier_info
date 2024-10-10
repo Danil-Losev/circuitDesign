@@ -1,0 +1,8 @@
+|main
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+A => F.IN0
+B => F.IN0
+B => F.IN1
+C => F.IN1
+
+

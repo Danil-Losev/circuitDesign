@@ -1,0 +1,7 @@
+module main (F, A, B, C);
+	input A, B, C;
+	output F;
+	
+	assign F = ((~A&~B)|(B&~C));
+
+	endmodule
