@@ -1,0 +1,35 @@
+|main
+AC <= multiplexer:inst4.AC
+P => normal:inst.P
+P => powersaving:inst1.P
+T => normal:inst.T
+T => powersaving:inst1.T
+H => normal:inst.H
+H => powersaving:inst1.H
+M => multiplexer:inst4.M
+
+
+|main|multiplexer:inst4
+E => Decoder0.IN0
+F => Decoder0.IN1
+M => Decoder0.IN2
+AC <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|normal:inst
+P => E.IN1
+P => E.IN1
+T => E.IN0
+T => E.IN0
+H => E.IN1
+H => E.IN1
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|powersaving:inst1
+P => F.IN0
+T => F.IN1
+H => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,37 @@
+|main
+F <= Function:inst1.F
+X1 <= Xone:inst.X1
+Z1 => Xone:inst.Z1
+Z2 => Xone:inst.Z2
+Z2 => Xthree:inst2.Z2
+Z3 => Xone:inst.Z3
+Z3 => Xthree:inst2.Z3
+Z4 => Xone:inst.Z4
+Z4 => Xthree:inst2.Z4
+X2 => Function:inst1.X2
+X3 <= Xthree:inst2.X3
+
+
+|main|Function:inst1
+X1 => Decoder0.IN0
+X2 => Decoder0.IN1
+X3 => Decoder0.IN2
+F <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|Xone:inst
+Z1 => X1.IN0
+Z2 => X1.IN0
+Z3 => X1.IN1
+Z4 => X1.IN1
+X1 <= X1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|Xthree:inst2
+Z2 => and1.IN0
+Z3 => and1.IN1
+Z3 => and2.IN0
+Z4 => and2.IN1
+X3 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

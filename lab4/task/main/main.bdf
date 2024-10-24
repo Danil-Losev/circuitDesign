@@ -1,0 +1,236 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 0 120 168 136)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "P" (rect 5 0 12 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -48 120 0 136))
+)
+(pin
+	(input)
+	(rect 0 152 168 168)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "H" (rect 5 0 13 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -56 152 0 168))
+)
+(pin
+	(input)
+	(rect 0 184 168 200)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "T" (rect 5 0 10 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -56 184 0 200))
+)
+(pin
+	(input)
+	(rect 0 352 168 368)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "M" (rect 5 0 13 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -56 352 0 368))
+)
+(pin
+	(output)
+	(rect 592 152 768 168)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "AC" (rect 90 0 105 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 768 152 816 168))
+)
+(block
+	(rect 224 -16 360 152)
+	(text "normal" (rect 5 5 42 19)(font "Arial" (font_size 8)))	(text "inst" (rect 5 153 22 165)(font "Arial" ))	(block_io "P" (input))
+	(block_io "T" (input))
+	(block_io "H" (input))
+	(block_io "E" (output))
+	(mapper
+		(pt 0 144)
+		(bidir)
+		)
+	(mapper
+		(pt 136 144)
+		(bidir)
+		)
+)
+(block
+	(rect 224 168 360 336)
+	(text "powersaving" (rect 5 5 80 19)(font "Arial" (font_size 8)))	(text "inst1" (rect 5 153 28 165)(font "Arial" ))	(block_io "P" (input))
+	(block_io "T" (input))
+	(block_io "H" (input))
+	(block_io "F" (output))
+	(mapper
+		(pt 0 24)
+		(bidir)
+		)
+	(mapper
+		(pt 136 24)
+		(bidir)
+		)
+)
+(block
+	(rect 416 80 552 248)
+	(text "multiplexer" (rect 5 5 65 19)(font "Arial" (font_size 8)))	(text "inst4" (rect 5 153 28 165)(font "Arial" ))	(block_io "E" (input))
+	(block_io "F" (input))
+	(block_io "M" (input))
+	(block_io "AC" (output))
+	(mapper
+		(pt 0 48)
+		(bidir)
+		)
+	(mapper
+		(pt 0 112)
+		(bidir)
+		)
+	(mapper
+		(pt 72 168)
+		(bidir)
+		)
+	(mapper
+		(pt 136 80)
+		(bidir)
+		)
+)
+(connector
+	(pt 168 128)
+	(pt 184 128)
+	(conduit)
+)
+(connector
+	(pt 168 192)
+	(pt 184 192)
+	(conduit)
+)
+(connector
+	(pt 184 128)
+	(pt 184 160)
+	(conduit)
+)
+(connector
+	(pt 184 160)
+	(pt 184 192)
+	(conduit)
+)
+(connector
+	(pt 168 160)
+	(pt 184 160)
+	(conduit)
+)
+(connector
+	(pt 184 160)
+	(pt 200 160)
+	(conduit)
+)
+(connector
+	(pt 200 128)
+	(pt 224 128)
+	(conduit)
+)
+(connector
+	(pt 200 192)
+	(pt 224 192)
+	(conduit)
+)
+(connector
+	(pt 200 128)
+	(pt 200 160)
+	(conduit)
+)
+(connector
+	(pt 200 160)
+	(pt 200 192)
+	(conduit)
+)
+(connector
+	(pt 360 128)
+	(pt 416 128)
+	(conduit)
+)
+(connector
+	(pt 360 192)
+	(pt 416 192)
+	(conduit)
+)
+(connector
+	(pt 168 360)
+	(pt 488 360)
+	(conduit)
+)
+(connector
+	(pt 488 360)
+	(pt 488 248)
+	(conduit)
+)
+(connector
+	(pt 552 160)
+	(pt 592 160)
+	(conduit)
+)
+(junction (pt 184 160))
+(junction (pt 200 160))

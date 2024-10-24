@@ -1,0 +1,230 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+
+// DATE "10/24/2024 20:43:40"
+
+// 
+// Device: Altera EP3C16F484C6 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module main (
+	F,
+	X1,
+	Z1,
+	Z2,
+	Z3,
+	Z4,
+	X2,
+	X3);
+output 	F;
+output 	X1;
+input 	Z1;
+input 	Z2;
+input 	Z3;
+input 	Z4;
+input 	X2;
+output 	X3;
+
+// Design Ports Information
+// F	=>  Location: PIN_M4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// X1	=>  Location: PIN_T7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// X3	=>  Location: PIN_E5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Z2	=>  Location: PIN_R9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Z1	=>  Location: PIN_P2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Z4	=>  Location: PIN_N2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Z3	=>  Location: PIN_L7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// X2	=>  Location: PIN_N1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \F~output_o ;
+wire \X1~output_o ;
+wire \X3~output_o ;
+wire \Z3~input_o ;
+wire \Z4~input_o ;
+wire \Z2~input_o ;
+wire \inst2|X3~0_combout ;
+wire \Z1~input_o ;
+wire \inst|X1~combout ;
+wire \X2~input_o ;
+wire \inst1|WideOr0~0_combout ;
+
+
+// Location: IOOBUF_X0_Y12_N2
+cycloneiii_io_obuf \F~output (
+	.i(!\inst1|WideOr0~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\F~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \F~output .bus_hold = "false";
+defparam \F~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y2_N9
+cycloneiii_io_obuf \X1~output (
+	.i(\inst|X1~combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\X1~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \X1~output .bus_hold = "false";
+defparam \X1~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X1_Y29_N30
+cycloneiii_io_obuf \X3~output (
+	.i(\inst2|X3~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\X3~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \X3~output .bus_hold = "false";
+defparam \X3~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y11_N1
+cycloneiii_io_ibuf \Z3~input (
+	.i(Z3),
+	.ibar(gnd),
+	.o(\Z3~input_o ));
+// synopsys translate_off
+defparam \Z3~input .bus_hold = "false";
+defparam \Z3~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y12_N15
+cycloneiii_io_ibuf \Z4~input (
+	.i(Z4),
+	.ibar(gnd),
+	.o(\Z4~input_o ));
+// synopsys translate_off
+defparam \Z4~input .bus_hold = "false";
+defparam \Z4~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X1_Y0_N29
+cycloneiii_io_ibuf \Z2~input (
+	.i(Z2),
+	.ibar(gnd),
+	.o(\Z2~input_o ));
+// synopsys translate_off
+defparam \Z2~input .bus_hold = "false";
+defparam \Z2~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y11_N10
+cycloneiii_lcell_comb \inst2|X3~0 (
+// Equation(s):
+// \inst2|X3~0_combout  = (\Z3~input_o  & ((\Z4~input_o ) # (\Z2~input_o )))
+
+	.dataa(\Z3~input_o ),
+	.datab(gnd),
+	.datac(\Z4~input_o ),
+	.datad(\Z2~input_o ),
+	.cin(gnd),
+	.combout(\inst2|X3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|X3~0 .lut_mask = 16'hAAA0;
+defparam \inst2|X3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y11_N15
+cycloneiii_io_ibuf \Z1~input (
+	.i(Z1),
+	.ibar(gnd),
+	.o(\Z1~input_o ));
+// synopsys translate_off
+defparam \Z1~input .bus_hold = "false";
+defparam \Z1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y11_N8
+cycloneiii_lcell_comb \inst|X1 (
+// Equation(s):
+// \inst|X1~combout  = (\Z3~input_o  & ((\Z2~input_o ) # ((\Z1~input_o  & \Z4~input_o )))) # (!\Z3~input_o  & (\Z1~input_o  & (\Z4~input_o )))
+
+	.dataa(\Z3~input_o ),
+	.datab(\Z1~input_o ),
+	.datac(\Z4~input_o ),
+	.datad(\Z2~input_o ),
+	.cin(gnd),
+	.combout(\inst|X1~combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|X1 .lut_mask = 16'hEAC0;
+defparam \inst|X1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y12_N22
+cycloneiii_io_ibuf \X2~input (
+	.i(X2),
+	.ibar(gnd),
+	.o(\X2~input_o ));
+// synopsys translate_off
+defparam \X2~input .bus_hold = "false";
+defparam \X2~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y11_N4
+cycloneiii_lcell_comb \inst1|WideOr0~0 (
+// Equation(s):
+// \inst1|WideOr0~0_combout  = ((!\inst2|X3~0_combout  & \inst|X1~combout )) # (!\X2~input_o )
+
+	.dataa(\inst2|X3~0_combout ),
+	.datab(\inst|X1~combout ),
+	.datac(\X2~input_o ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\inst1|WideOr0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|WideOr0~0 .lut_mask = 16'h4F4F;
+defparam \inst1|WideOr0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign F = \F~output_o ;
+
+assign X1 = \X1~output_o ;
+
+assign X3 = \X3~output_o ;
+
+endmodule
