@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, D:/Code/CircuitDesign/lab5/task/task/task.bdf
+source_file = 1, D:/Code/CircuitDesign/lab5/task/task/db/task.cbx.xml
+source_file = 1, D:/Code/CircuitDesign/lab5/task/task/seven_segment_decoder.v
+design_name = task
+instance = comp, \HEX0_A~output\, HEX0_A~output, task, 1
+instance = comp, \HEX0_B~output\, HEX0_B~output, task, 1
+instance = comp, \HEX0_C~output\, HEX0_C~output, task, 1
+instance = comp, \HEX0_D~output\, HEX0_D~output, task, 1
+instance = comp, \HEX0_E~output\, HEX0_E~output, task, 1
+instance = comp, \HEX0_F~output\, HEX0_F~output, task, 1
+instance = comp, \HEX0_G~output\, HEX0_G~output, task, 1
+instance = comp, \C0~input\, C0~input, task, 1
+instance = comp, \C1~input\, C1~input, task, 1
+instance = comp, \inst|A~0\, inst|A~0, task, 1
+instance = comp, \inst|B~0\, inst|B~0, task, 1
+instance = comp, \inst|G~0\, inst|G~0, task, 1
