@@ -29,7 +29,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "task")
-  (DATE "11/21/2024 15:04:36")
+  (DATE "12/02/2024 13:35:40")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition")
@@ -41,7 +41,7 @@
     (INSTANCE \\HEX0_A\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (459:459:459) (473:473:473))
+        (PORT i (983:983:983) (980:980:980))
         (IOPATH i o (2009:2009:2009) (2060:2060:2060))
       )
     )
@@ -51,7 +51,7 @@
     (INSTANCE \\HEX0_B\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (507:507:507) (491:491:491))
+        (PORT i (3772:3772:3772) (4101:4101:4101))
         (IOPATH i o (2060:2060:2060) (2009:2009:2009))
       )
     )
@@ -61,7 +61,7 @@
     (INSTANCE \\HEX0_C\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (938:938:938) (915:915:915))
+        (PORT i (3513:3513:3513) (3807:3807:3807))
         (IOPATH i o (2070:2070:2070) (2019:2019:2019))
       )
     )
@@ -71,8 +71,8 @@
     (INSTANCE \\HEX0_D\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (3285:3285:3285) (3555:3555:3555))
-        (IOPATH i o (2070:2070:2070) (2019:2019:2019))
+        (PORT i (1285:1285:1285) (1288:1288:1288))
+        (IOPATH i o (2019:2019:2019) (2070:2070:2070))
       )
     )
   )
@@ -81,8 +81,8 @@
     (INSTANCE \\HEX0_E\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (3284:3284:3284) (3566:3566:3566))
-        (IOPATH i o (2070:2070:2070) (2019:2019:2019))
+        (PORT i (1305:1305:1305) (1301:1301:1301))
+        (IOPATH i o (2019:2019:2019) (2070:2070:2070))
       )
     )
   )
@@ -91,8 +91,8 @@
     (INSTANCE \\HEX0_F\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (3285:3285:3285) (3555:3555:3555))
-        (IOPATH i o (2060:2060:2060) (2009:2009:2009))
+        (PORT i (1285:1285:1285) (1291:1291:1291))
+        (IOPATH i o (2009:2009:2009) (2060:2060:2060))
       )
     )
   )
@@ -101,8 +101,8 @@
     (INSTANCE \\HEX0_G\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (900:900:900) (922:922:922))
-        (IOPATH i o (2009:2009:2009) (2060:2060:2060))
+        (PORT i (3289:3289:3289) (3571:3571:3571))
+        (IOPATH i o (2060:2060:2060) (2009:2009:2009))
       )
     )
   )
@@ -129,34 +129,22 @@
     (INSTANCE \\inst\|A\~0\\)
     (DELAY
       (ABSOLUTE
-        (PORT datab (3182:3182:3182) (3481:3481:3481))
-        (PORT datac (3323:3323:3323) (3624:3624:3624))
-        (IOPATH datab combout (355:355:355) (369:369:369))
+        (PORT datac (3386:3386:3386) (3687:3687:3687))
+        (PORT datad (3068:3068:3068) (3313:3313:3313))
+        (IOPATH datac combout (243:243:243) (241:241:241))
+        (IOPATH datad combout (130:130:130) (120:120:120))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiii_lcell_comb")
+    (INSTANCE \\inst\|D\~0\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (3383:3383:3383) (3685:3685:3685))
+        (PORT datad (3066:3066:3066) (3314:3314:3314))
         (IOPATH datac combout (241:241:241) (241:241:241))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst\|B\~0\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datab (3178:3178:3178) (3479:3479:3479))
-        (PORT datac (3321:3321:3321) (3625:3625:3625))
-        (IOPATH datab combout (355:355:355) (369:369:369))
-        (IOPATH datac combout (243:243:243) (242:242:242))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst\|G\~0\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datab (3182:3182:3182) (3477:3477:3477))
-        (PORT datac (3323:3323:3323) (3622:3622:3622))
-        (IOPATH datab combout (365:365:365) (373:373:373))
-        (IOPATH datac combout (243:243:243) (242:242:242))
+        (IOPATH datad combout (130:130:130) (120:120:120))
       )
     )
   )

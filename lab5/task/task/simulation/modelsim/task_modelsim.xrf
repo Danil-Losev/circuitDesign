@@ -13,5 +13,4 @@ instance = comp, \HEX0_G~output\, HEX0_G~output, task, 1
 instance = comp, \C0~input\, C0~input, task, 1
 instance = comp, \C1~input\, C1~input, task, 1
 instance = comp, \inst|A~0\, inst|A~0, task, 1
-instance = comp, \inst|B~0\, inst|B~0, task, 1
-instance = comp, \inst|G~0\, inst|G~0, task, 1
+instance = comp, \inst|D~0\, inst|D~0, task, 1
